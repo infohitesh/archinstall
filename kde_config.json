@@ -1,0 +1,302 @@
+{
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        },
+        "power_management_config": {
+            "power_management": "power-profiles-daemon"
+        },
+        "print_service_config": {
+            "enabled": false
+        }
+    },
+    "archinstall_language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Systemd-boot",
+        "removable": false,
+        "uki": false
+    },
+    "custom_commands": [],
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme1n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot",
+                            "esp"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "e507d525-d6b0-404d-8731-8f58a77b56cc",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "5d6bce07-68e6-4956-99a9-418e7daa37dd",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 50
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "linux-home"
+                        ],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/home",
+                        "obj_id": "3d879efb-0de8-4feb-a0db-00e6cb88366f",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 100
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 54761881600
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "firmware_optdeps": [],
+    "hostname": "hparch",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "console_font": "ter-124b",
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "India": [
+                "http://in.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://in.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://mirror.maa.albony.in/archlinux/$repo/os/$arch",
+                "http://mirrors.nxtgen.com/archlinux-mirror/$repo/os/$arch",
+                "https://mirrors.nxtgen.com/archlinux-mirror/$repo/os/$arch",
+                "http://mirror.4v1.in/archlinux/$repo/os/$arch",
+                "https://mirror.4v1.in/archlinux/$repo/os/$arch",
+                "https://in.arch.niranjan.co/$repo/os/$arch",
+                "http://archlinux.kushwanthreddy.com/$repo/os/$arch",
+                "https://archlinux.kushwanthreddy.com/$repo/os/$arch",
+                "https://mirror.dawn.org.in/arch/$repo/os/$arch",
+                "https://mirror.bom.kat.cx/archlinux/$repo/os/$arch"
+            ],
+            "Singapore": [
+                "http://sg.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://sg.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "http://mirror.aktkn.sg/archlinux/$repo/os/$arch",
+                "http://mirror.guillaumea.fr/archlinux/$repo/os/$arch",
+                "https://mirror.guillaumea.fr/archlinux/$repo/os/$arch",
+                "http://mirror.jingk.ai/archlinux/$repo/os/$arch",
+                "https://mirror.jingk.ai/archlinux/$repo/os/$arch",
+                "http://ossmirror.mycloud.services/os/linux/archlinux/$repo/os/$arch",
+                "http://mirror.sg.gs/archlinux/$repo/os/$arch",
+                "https://mirror.sg.gs/archlinux/$repo/os/$arch",
+                "https://singapore.mirror.pkgbuild.com/$repo/os/$arch",
+                "https://sg.arch.niranjan.co/$repo/os/$arch",
+                "http://mirror.freedif.org/archlinux/$repo/os/$arch",
+                "https://mirror.freedif.org/archlinux/$repo/os/$arch",
+                "http://mirror.sg.cdn-perfprod.com/archlinux/$repo/os/$arch",
+                "https://mirror.sg.cdn-perfprod.com/archlinux/$repo/os/$arch"
+            ],
+            "Worldwide": [
+                "http://mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://mirror.rackspace.com/archlinux/$repo/os/$arch",
+                "https://ftpmirror.infania.net/mirror/archlinux/$repo/os/$arch",
+                "https://geo.mirror.pkgbuild.com/$repo/os/$arch",
+                "https://fastly.mirror.pkgbuild.com/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": []
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+        "archinstall",
+        "ark",
+        "base",
+        "base-devel",
+        "bluedevil",
+        "bluez",
+        "bluez-utils",
+        "breeze-gtk",
+        "dkms",
+        "dolphin",
+        "dosfstools",
+        "efibootmgr",
+        "ffmpegthumbs",
+        "firefox",
+        "git",
+        "gst-libav",
+        "gst-plugin-pipewire",
+        "gst-plugins-bad",
+        "gst-plugins-good",
+        "gst-plugins-ugly",
+        "gwenview",
+        "htop",
+        "intel-media-driver",
+        "intel-ucode",
+        "iwd",
+        "jq",
+        "kalk",
+        "kate",
+        "kde-gtk-config",
+        "kdeconnect",
+        "kdeplasma-addons",
+        "koko",
+        "kolourpaint",
+        "kompare",
+        "konsole",
+        "kscreen",
+        "ksystemlog",
+        "libpulse",
+        "libva-intel-driver",
+        "libva-utils",
+        "libvpl",
+        "linux",
+        "linux-firmware",
+        "linux-headers",
+        "man-db",
+        "mkinitcpio",
+        "nano",
+        "network-manager-applet",
+        "networkmanager",
+        "noto-fonts-cjk",
+        "okular",
+        "oxygen",
+        "oxygen-cursors",
+        "oxygen-icons",
+        "oxygen-sounds",
+        "oxygen5",
+        "pipewire",
+        "pipewire-alsa",
+        "pipewire-jack",
+        "pipewire-pulse",
+        "plasma-desktop",
+        "plasma-login-manager",
+        "plasma-nm",
+        "plasma-pa",
+        "power-profiles-daemon",
+        "reflector",
+        "rsync",
+        "smartmontools",
+        "sof-firmware",
+        "spectacle",
+        "sudo",
+        "terminus-font",
+        "ttf-dejavu",
+        "ttf-liberation",
+        "usbutils",
+        "vim",
+        "vlc",
+        "vlc-plugin-ffmpeg",
+        "vlc-plugins-all",
+        "vpl-gpu-rt",
+        "vulkan-intel",
+        "wget",
+        "wireplumber",
+        "wpa_supplicant",
+        "xdg-utils",
+        "zsh",
+        "zsh-autocomplete",
+        "zsh-autosuggestions",
+        "zsh-completions",
+        "zsh-lovers",
+        "zsh-syntax-highlighting"
+    ],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
+    },
+    "profile_config": {
+        "gfx_driver": "Intel (open-source)",
+        "greeter": "plasma-login-manager",
+        "profile": {
+            "custom_settings": {
+                "KDE Plasma": {
+                    "plasma_flavor": "plasma-desktop"
+                }
+            },
+            "details": [
+                "KDE Plasma"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": false
+    },
+    "timezone": "Asia/Kolkata",
+    "version": "4.5"
+}
